@@ -10,7 +10,7 @@ export default function MarkdownRenderer({ content }: MarkdownRendererProps) {
     const cleanedText = notitiesIndex !== -1 ? text.substring(0, notitiesIndex) : text;
     
     const lines = cleanedText.split('\n');
-    const elements: JSX.Element[] = [];
+    const elements: React.ReactElement[] = [];
     let i = 0;
 
     while (i < lines.length) {
